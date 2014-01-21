@@ -1,0 +1,7 @@
+RewriteEngine On
+order deny,allow
+allow from localhost
+allow from 10.0.0.1
+allow from 192.168.0.1
+#allow from tom.sapletta.com
+deny from all 
