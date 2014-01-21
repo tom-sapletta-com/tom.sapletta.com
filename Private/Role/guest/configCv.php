@@ -106,6 +106,7 @@ class configCv extends config
     function createPath($path, $filemode = 0777)
     {
         if (is_dir($path)) return true;
+        // You should change access for folder by admin, when is permission denied for mkdir()
         return mkdir($path, $filemode, true);
     }
 
