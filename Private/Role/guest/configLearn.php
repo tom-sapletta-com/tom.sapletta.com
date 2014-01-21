@@ -12,17 +12,7 @@ include( $config->path_lib .'github.com/mustangostang/spyc/Spyc.php');
 
 class configLearn extends config
 {
-//    public $data = array(
-//      'title' => 'Michal Leon Borsuk',
-//      'description' => '',
-//      'keywords' => ''
-//    );
-//
-//    public $data_path = array(
-//        'template' => '../../Public/cvm/template/',
-//        'data' => '../../Public/cvm/data/',
-//        '000' => ''
-//    );
+
 
     public $file_list = array( 'page.yaml', 'cv.yaml' );
     public $file_page = 'page.yaml';
