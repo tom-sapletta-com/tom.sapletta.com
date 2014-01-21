@@ -7,7 +7,8 @@
 
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
-include_once('../../Private/Role/guest/log.php');
+//include_once('../../Private/Role/guest/log.php');
+include_once('log.php');
 
 //TODO - get functions from CV
 

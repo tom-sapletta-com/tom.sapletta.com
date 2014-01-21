@@ -6,13 +6,13 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # tom.sapletta.com
-#RewriteCond %{REQUEST_URI} !^/Public/
-#RewriteRule ^([a-z0-9-_]+)$ /index.php?param=$1
-#RewriteRule ^([a-z0-9-_]+)/([a-z0-9-_]+)$ /Public/$1/index.php?lang=$2
+#RewriteCond %{REQUEST_URI} !^/Public/ [R]
+#RewriteRule ^([a-z0-9-_]+)$ /index.php?param=$1 [R]
+#RewriteRule ^([a-z0-9-_]+)/([a-z0-9-_]+)$ /Public/$1/index.php?lang=$2 [R]
 #[R]
 
 
 # LOCAL
-RewriteCond %{REQUEST_URI} !^/tom.sapletta.com/Public/
+#RewriteCond %{REQUEST_URI} !^/tom.sapletta.com/Public/
 RewriteRule ^([a-z0-9-_]+)$ /tom.sapletta.com/index.php?param=$1
 RewriteRule ^([a-z0-9-_]+)/([a-z0-9-_]+)$ /tom.sapletta.com/Public/$1/index.php?lang=$2
