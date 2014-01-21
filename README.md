@@ -13,12 +13,12 @@ This is example how to easy is possible creating PHP framework with make service
    
   
 Tree folders:
-
+ ```
   - /Community - external library (read only, Writing by System )
   - /Core - library for start project (read only, Writing by Producer )
   - /Private - private data for project and external services (read only for guest, Writing by System, Admin, User )
   - /Public - all data with are share for internet (read only)
-  
+ ```  
   
 Roles:
   - Producer - made a system - not used in project
