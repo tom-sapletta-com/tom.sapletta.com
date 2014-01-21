@@ -4,6 +4,9 @@
  * User: tom.sapletta.com
  * Date: 21.01.14 10:03
  */
+?>
+
+<?php
 
 //TODO split log -> move class to dubphp, leave only configurable data for log
 //TODO - mesages, info, error type of log

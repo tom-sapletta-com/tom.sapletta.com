@@ -1,28 +1,25 @@
-<?PHP
-ini_set( 'display_errors', 'On' );
-error_reporting( E_ALL );
-?>
-
 <?php
 /**
  * Created by PhpStorm.
- * User: neptun
+ * User: tom.sapletta.com
  * Date: 12.12.13
  * Time: 20:13
  */
+?>
+
+<?PHP
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
+?>
+
+<?PHP
 
 include_once('Private/Role/guest/config.php');
 
 $config = new config();
-$lang = $config->getLang();
 
-if( $config->getParam() == 'cv' OR empty( $config->getParam() ) )
-{
-    header('Location: http://'.$config->getHomeUrl().'/cv/'.$lang);
+if ($config->getParam() == 'cv' OR empty($config->getParam())) {
+    header('Location: http://' . $config->getHomeUrl() . '/cv/' . $config->getLang());
+} else {
+    header('Location: http://' . $config->getHomeUrl() . '/error/' . $config->getLang());
 }
-else
-{
-    header('Location: http://'.$config->getHomeUrl().'/error/'.$lang);
-}
-
-?>
