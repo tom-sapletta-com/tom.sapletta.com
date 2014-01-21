@@ -20,9 +20,9 @@ $lang = $config->getLang();
 //$config->printServerInfo();
 //echo $config->getHomeUrl();
 //echo $config->getParam();
-//echo $config->getHomeUrl();
+echo $config->getHomeUrl();
 //print_r($_SERVER);
-//die('stop');
+die('stop');
 
 if( $config->getParam() == 'cv' OR empty( $config->getParam() ) )
 {

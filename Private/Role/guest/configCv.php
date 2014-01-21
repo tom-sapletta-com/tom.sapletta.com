@@ -153,7 +153,7 @@ class configCv extends config
     public function getFileRemote($filename)
     {
         $cache_dir = '../../Private/Cache/';
-//        $cache_dir_real = realpath($cache_dir);
+
         $pathdir = $cache_dir . $this->url_data;
 
         // when not exist path, creati path to source
@@ -173,7 +173,8 @@ class configCv extends config
                     $this->addLog( 'FILE_DATA_IS_EMPTY', $this->url );
                     return false;
                 }
-                file_put_contents($pathfile, $filedata);
+//                $cache_dir_real = realpath($cache_dir);
+                file_put_contents( $pathfile , $filedata);
             }
 
             // Everything for owner, read and execute for others
