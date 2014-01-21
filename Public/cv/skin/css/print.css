@@ -1,0 +1,13 @@
+@media print {
+    /*body {*/
+        /*font-size: 10pt;*/
+        /*text-decoration: underline;*/
+        /*font-family: "Times New Roman", "Times", "serif";*/
+    /*}*/
+    .menu, .footer, .header {
+        display: none;
+    }
+    /*.cv {*/
+        /*display:inline;*/
+    /*}*/
+}

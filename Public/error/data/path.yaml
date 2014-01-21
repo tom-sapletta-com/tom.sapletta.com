@@ -1,0 +1,3 @@
+template: ../../Public/error/template/
+data: ../../Public/error/data/
+lib: ../../Community/
