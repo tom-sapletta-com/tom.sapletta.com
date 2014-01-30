@@ -1,0 +1,4 @@
+- documentation
+- manual
+- diagrams about use
+- ...
