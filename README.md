@@ -44,7 +44,7 @@ Interesting solutions:
 
 Wersja lokalna - podstawowa projektu
 ---
-
+ ```
   +----------------+
   |                |
   |  Community     |
@@ -58,7 +58,7 @@ Wersja lokalna - podstawowa projektu
   |  Public        |
   |                |
   +----------------+
-
+ ```
 
 Wersja rozproszona z delegowaniem danych i kodu z zewnętrznych repozytoriów na użytkownika, serwer, chmurę
 
