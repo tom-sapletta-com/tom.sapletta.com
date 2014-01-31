@@ -40,5 +40,135 @@ Interesting solutions:
   - the file structure for the data set (Private/Public, Core/Community)
 
 
+
+
+Wersja lokalna - podstawowa projektu
+---
+
+  +----------------+
+  |                |
+  |  Community     |
+  |                |
+  |  Core          |
+  |                |
+  |  Local         |
+  |                |
+  |  Private       |
+  |                |
+  |  Public        |
+  |                |
+  +----------------+
+
+
+Wersja rozproszona z delegowaniem danych i kodu z zewnętrznych repozytoriów na użytkownika, serwer, chmurę
+
+  +--------------+     +----------------+
+  |              |     |                |
+  |  Community   +----&gt;|   Core         |
+  |              |     |                |
+  +--------------+     |   Local        |
+                       |                |
+                       |   Private      |
+                       |                |
+                       |   Public       |
+                       |                |
+                       +----------------+
+
+
+Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwer, chmurę
+
+                      ^
+ +--------------+     |
+ |              |     |
+ |  Community   +----&gt;|    +----------------+
+ |              |     |    | domain1.com    |
+ +--------------+     +---&gt;|----------------|
+                      |    |                |
+      +---------+     |    |   Local        |
+      |         |     |    |                |
+      |  Core   +----&gt;|    |   Private      |
+      |         |     |    |                |
+      +---------+     |    |   Public       |
+                      |    |                |
+                      |    +----------------+
+                      |
+                      |    +----------------+
+                      |    | domain2.com    |
+                      +---&gt;|----------------|
+                      |    |                |
+                      |    |   Local        |
+                      |    |                |
+                      |    |   Private      |
+                      |    |                |
+                      |    |   Public       |
+                      |    |                |
+                      |    +----------------+
+                      |
+                      v
+
+
+
+Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwer, chmurę oraz wspólnych danych publicznych, które w przypadku projektu opartego np. o system multiblogowy, wielojęzyczny umożliwia umieszczanie tych samych danych w różnych językach w jednym folderze, bez potrzeby duplikowania tych danych.
+                      ^
+ +--------------+     |
+ |              |     |
+ |  Community   +----&gt;|    +----------------+
+ |              |     |    | domain1.com    |
+ +--------------+     +---&gt;|----------------|
+                      |    |                |
+   +------------+     |    |   Local        |
+   |            |     |    |                |
+   |   Core     +----&gt;|    |   Private      |
+   |            |     |    |                |
+   +------------+     |    +----------------+
+                      |
+     +----------+     |
+     |          |     |
+     |  Public  +----&gt;|    +----------------+
+     |          |     |    | domain2.com    |
+     +----------+     +---&gt;|----------------|
+                      |    |                |
+                      |    |   Local        |
+                      |    |                |
+                      |    |   Private      |
+                      |    |                |
+                      |    +----------------+
+                      |
+                      v
+
+
+
+Wersja rozszerzona o overriding - czyli rozwiązanie modułowe, nadpisujące tylko część danych związanych z innym językiem - np. obrazy
+
+                      ^
+ +--------------+     |
+ |              |     |
+ |  Community   +----&gt;|    +----------------+
+ |              |     |    | domain1.com    |
+ +--------------+     +---&gt;|----------------|
+                      |    |                |
+   +------------+     |    |   Local        |
+   |            |     |    |                |
+   |   Core     +----&gt;|    |   Private      |
+   |            |     |    |                |
+   +------------+     |    |   Public       |
+                      |    |                |
+     +----------+     |    +----------------+
+     |          |     |
+     |  Public  +----&gt;|    +----------------+
+     |          |     |    | domain2.com    |
+     +----------+     +---&gt;|----------------|
+                      |    |                |
+                      |    |   Local        |
+                      |    |                |
+                      |    |   Private      |
+                      |    |                |
+                      |    |   Public       |
+                      |    |                |
+                      |    +----------------+
+                      v
+
+
+
 More info about patterns:
 http://sapletta.com/pl/prywatne-dane-odseparowane-od-projektu/
