@@ -61,7 +61,8 @@ Wersja lokalna - podstawowa projektu
  ```
 
 Wersja rozproszona z delegowaniem danych i kodu z zewnętrznych repozytoriów na użytkownika, serwer, chmurę
-
+---
+ ```
   +--------------+     +----------------+
   |              |     |                |
   |  Community   +----&gt;|   Core         |
@@ -73,10 +74,11 @@ Wersja rozproszona z delegowaniem danych i kodu z zewnętrznych repozytoriów na
                        |   Public       |
                        |                |
                        +----------------+
-
+ ```
 
 Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwer, chmurę
-
+--- 
+ ```
                       ^
  +--------------+     |
  |              |     |
@@ -105,10 +107,12 @@ Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwe
                       |    +----------------+
                       |
                       v
-
+ ```
 
 
 Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwer, chmurę oraz wspólnych danych publicznych, które w przypadku projektu opartego np. o system multiblogowy, wielojęzyczny umożliwia umieszczanie tych samych danych w różnych językach w jednym folderze, bez potrzeby duplikowania tych danych.
+---
+ ```
                       ^
  +--------------+     |
  |              |     |
@@ -136,10 +140,11 @@ Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwe
                       |
                       v
 
-
+ ```
 
 Wersja rozszerzona o overriding - czyli rozwiązanie modułowe, nadpisujące tylko część danych związanych z innym językiem - np. obrazy
-
+---
+ ```
                       ^
  +--------------+     |
  |              |     |
@@ -168,7 +173,7 @@ Wersja rozszerzona o overriding - czyli rozwiązanie modułowe, nadpisujące tyl
                       |    +----------------+
                       v
 
-
+ ```
 
 More info about patterns:
 http://sapletta.com/pl/prywatne-dane-odseparowane-od-projektu/
