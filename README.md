@@ -38,3 +38,7 @@ Interesting solutions:
     - data which the Internet search engine should be saving as original string, but as encoding data
   - opportunity to present data from an external server
   - the file structure for the data set (Private/Public, Core/Community)
+
+
+More info about patterns:
+http://sapletta.com/pl/prywatne-dane-odseparowane-od-projektu/
