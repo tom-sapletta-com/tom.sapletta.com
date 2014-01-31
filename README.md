@@ -42,7 +42,7 @@ Interesting solutions:
 
 
 
-Wersja lokalna - podstawowa projektu
+Local version - basic
 ---
  ```
   +----------------+
@@ -60,12 +60,12 @@ Wersja lokalna - podstawowa projektu
   +----------------+
  ```
 
-Wersja rozproszona z delegowaniem danych i kodu z zewnętrznych repozytoriów na użytkownika, serwer, chmurę
+A distributed version of the delegation data and code from external user repositories, server, cloud
 ---
  ```
   +--------------+     +----------------+
   |              |     |                |
-  |  Community   +----&gt;|   Core         |
+  |  Community   +---->|   Core         |
   |              |     |                |
   +--------------+     |   Local        |
                        |                |
@@ -76,19 +76,19 @@ Wersja rozproszona z delegowaniem danych i kodu z zewnętrznych repozytoriów na
                        +----------------+
  ```
 
-Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwer, chmurę
+Version with a delegation of the core and external code/data per user, server, cloud
 --- 
  ```
                       ^
  +--------------+     |
  |              |     |
- |  Community   +----&gt;|    +----------------+
+ |  Community   +---->|    +----------------+
  |              |     |    | domain1.com    |
- +--------------+     +---&gt;|----------------|
+ +--------------+     +--->|----------------|
                       |    |                |
       +---------+     |    |   Local        |
       |         |     |    |                |
-      |  Core   +----&gt;|    |   Private      |
+      |  Core   +---->|    |   Private      |
       |         |     |    |                |
       +---------+     |    |   Public       |
                       |    |                |
@@ -96,7 +96,7 @@ Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwe
                       |
                       |    +----------------+
                       |    | domain2.com    |
-                      +---&gt;|----------------|
+                      +--->|----------------|
                       |    |                |
                       |    |   Local        |
                       |    |                |
@@ -109,28 +109,27 @@ Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwe
                       v
  ```
 
-
-Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwer, chmurę oraz wspólnych danych publicznych, które w przypadku projektu opartego np. o system multiblogowy, wielojęzyczny umożliwia umieszczanie tych samych danych w różnych językach w jednym folderze, bez potrzeby duplikowania tych danych.
+Version with a delegation of the core and external code/data per user, server, cloud and shared public data.
 ---
  ```
                       ^
  +--------------+     |
  |              |     |
- |  Community   +----&gt;|    +----------------+
+ |  Community   +---->|    +----------------+
  |              |     |    | domain1.com    |
- +--------------+     +---&gt;|----------------|
+ +--------------+     +--->|----------------|
                       |    |                |
    +------------+     |    |   Local        |
    |            |     |    |                |
-   |   Core     +----&gt;|    |   Private      |
+   |   Core     +---->|    |   Private      |
    |            |     |    |                |
    +------------+     |    +----------------+
                       |
      +----------+     |
      |          |     |
-     |  Public  +----&gt;|    +----------------+
+     |  Public  +---->|    +----------------+
      |          |     |    | domain2.com    |
-     +----------+     +---&gt;|----------------|
+     +----------+     +--->|----------------|
                       |    |                |
                       |    |   Local        |
                       |    |                |
@@ -142,27 +141,27 @@ Wersja z delegowaniem rdzenia i danych/kodu zewnętrznego na użytkownika, serwe
 
  ```
 
-Wersja rozszerzona o overriding - czyli rozwiązanie modułowe, nadpisujące tylko część danych związanych z innym językiem - np. obrazy
+Extended version of overriding
 ---
  ```
                       ^
  +--------------+     |
  |              |     |
- |  Community   +----&gt;|    +----------------+
- |              |     |    | domain1.com    |
- +--------------+     +---&gt;|----------------|
+ |  Community   +---->|    +----------------+
+ |              |     |    |   domain.de    |
+ +--------------+     +--->|----------------|
                       |    |                |
    +------------+     |    |   Local        |
    |            |     |    |                |
-   |   Core     +----&gt;|    |   Private      |
+   |   Core     +---->|    |   Private      |
    |            |     |    |                |
    +------------+     |    |   Public       |
                       |    |                |
      +----------+     |    +----------------+
      |          |     |
-     |  Public  +----&gt;|    +----------------+
-     |          |     |    | domain2.com    |
-     +----------+     +---&gt;|----------------|
+     |  Public  +---->|    +----------------+
+     |          |     |    |   domain.pl    |
+     +----------+     +--->|----------------|
                       |    |                |
                       |    |   Local        |
                       |    |                |
