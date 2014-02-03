@@ -1,5 +1,0 @@
-- documentation
-- manual
-- diagrams about use
-- extend the source of data
-- ...
